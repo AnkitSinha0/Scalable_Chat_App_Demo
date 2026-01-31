@@ -7,6 +7,12 @@ This project demonstrates how to structure a real-time chat app in a way that ca
 This project demonstrates how to scale a WebSocket-based chat app using **Redis Pub/Sub (Aiven Redis)** so that multiple backend servers can communicate with each other.
 
 ---
+## Architecture
+
+![Architecture Diagram](docs/architecture.png)
+
+--- 
+
 
 ## 🧩 Project Structure
 
@@ -36,12 +42,10 @@ my-turborepo/
 
 ## 🚀 Getting Started (Local Setup)
 
-### 1️⃣ Install dependencies (from repo root)
+### Install dependencies (from repo root)
 
 ```bash
 pnpm install
 
 
-## Architecture
 
-![Architecture Diagram](docs/architecture.png)
