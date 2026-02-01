@@ -1,7 +1,7 @@
 import http from 'node:http';
 import 'dotenv/config';
-
 import SocketService from './services/socket.js';
+
     (async function init(){
         const socketService = new SocketService();
         const httpServer =  http.createServer();

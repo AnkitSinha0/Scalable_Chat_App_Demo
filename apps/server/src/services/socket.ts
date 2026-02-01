@@ -4,7 +4,12 @@ class SocketService {
     private _io : Server;
     constructor() {
         console.log("SocketService initialized");
-        this._io = new Server();
+        this._io = new Server({
+            cors : {
+                allowedHeaders : ["*"],
+                origin : "*",
+            }
+        });
       
     }
     public initListeners(){
