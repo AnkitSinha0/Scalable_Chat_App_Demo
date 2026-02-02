@@ -22,7 +22,7 @@ class SocketService {
         });
    sub.subscribe('MESSAGES')
 
-      sub.on('message', (channel , message)=>{
+    sub.on('message', (channel , message)=>{
     if(channel === 'MESSAGES'){
         console.log("new message from redis",message)
         this._io.emit("message",message);
@@ -32,6 +32,9 @@ class SocketService {
 
       
     }
+
+
+    
     public initListeners(){
        const io = this._io;
        console.log("Initializing socket listeners");
