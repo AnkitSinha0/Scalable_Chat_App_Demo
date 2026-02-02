@@ -5,7 +5,7 @@ import SocketService from './services/socket.js';
     (async function init(){
         const socketService = new SocketService();
         const httpServer =  http.createServer();
-        const PORT = process.env.PORT ;
+        const PORT = process.env.PORT || 3000;
         socketService.io.attach(httpServer);
 
         httpServer.listen(PORT,()=>{
